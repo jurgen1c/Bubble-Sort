@@ -1,31 +1,23 @@
 def bubble_sort(arr)
   swapped = false
   runs = 1
-
   until swapped
     swapped = true
     (0...arr.length - runs).each do |i|
       next unless arr[i] > arr[i + 1]
-
       swapped = false
       temp = arr[i]
       arr[i] = arr[i + 1]
       arr[i + 1] = temp
-
     end
-
     runs += 1
-
   end
-
   arr
-
 end
 
-my_array = [23, 43, 1, 9, 82, 51];
+my_array = [23, 43, 1, 9, 82, 51]
 
-p bubble_sort(my_array);
-
+p bubble_sort(my_array)
 
 def bubble_sort_by(array)
   unsorted = true
@@ -35,12 +27,13 @@ def bubble_sort_by(array)
         array[index], array[index + 1] = [array[index + 1], array[index]]
       end
     end
-     unsorted = false
+  unsorted = false
   end
   array
 end
 
-puts "\nResult of bubble_sort_by():"
-  print(bubble_sort_by(['hi', 'hello', 'goodbye', 'hey!']) do |left, right|
+  puts "\nResult of bubble_sort_by():"
+  print(bubble_sort_by(['hi', 'hello', 'goodbye', 'hey!'])
+  do |left, right|
     left.length - right.length
   end)
