@@ -1,3 +1,5 @@
+# ---------------- Bubble Sort Method ------------------------ /
+
 def bubble_sort(arr)
   swapped = false
   runs = 1
@@ -17,14 +19,17 @@ end
 
 my_array = [23, 43, 1, 9, 82, 51]
 
+p "Result of bubble_sort():"
 p bubble_sort(my_array)
+
+# ---------------------------- Bubble Sort By Method ------------------------------- /
 
 def bubble_sort_by(array)
   unsorted = true
   while unsorted
     (0..(array.length - 2)).each do |index|
-      if yield(array[index], array[index + 1]).negative?
-        array[index], array[index + 1] = [array[index + 1], array[index]]
+      if yield(array[index], array[index + 1]).positive?
+        array[index], array[index + 1] = array[index + 1], array[index]
       end
     end
   unsorted = false

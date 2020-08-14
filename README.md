@@ -8,11 +8,12 @@ Assignment is focused on the use of yield and passing a block to a method.
 
 ## Screenshot
 
-![screenshot](screenshot.png)
+![screenshot](appscreenshot.png)
 
 
 ## Built With
 
+- VsCode
 - Ruby
 - Rubocop
 
@@ -38,10 +39,10 @@ Assignment is focused on the use of yield and passing a block to a method.
 - Twitter: [@Lekunze_Nley](https://twitter.com/Lekunze_Nley)
 - Linkedin: [lekunze-nley](https://www.linkedin.com/in/lekunze-nley/)
 
-👤 **Type name here**
+👤 **Jurgen Clausen Gutierrez**
 
-- Github: [@handle](https://github.com/name)
-- LinkedIn: [handle](https://www.linkedin.com/in/name/)
+- Github: [@jurgen1c](https://github.com/jurgen1c)
+- LinkedIn: [jurgen-clausen](https://www.linkedin.com/in/jurgen-clausen-2740061a9/)
 
 ## 🤝 Contributing
 
