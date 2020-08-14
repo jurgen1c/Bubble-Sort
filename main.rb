@@ -29,9 +29,8 @@ def bubble_sort_by(array)
   unsorted = true
   while unsorted
     (0..(array.length - 2)).each do |index|
-      if yield(array[index], array[index + 1]).positive?
-        array[index], array[index + 1] = array[index + 1], array[index]
-      end
+
+    array[index], array[index + 1] = array[index + 1], array[index] if yield(array[index], array[index + 1]).positive? 
     end
     unsorted = false
   end
