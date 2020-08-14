@@ -30,14 +30,12 @@ p bubble_sort(my_array);
 def bubble_sort_by(array)
   unsorted = true
   while unsorted
-   
     (0..(array.length - 2)).each do |index|
       if yield(array[index], array[index + 1]).negative?
-        unsorted = true
         array[index], array[index + 1] = [array[index + 1], array[index]]
-         unsorted = false
       end
     end
+     unsorted = false
   end
   array
 end
