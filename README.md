@@ -8,7 +8,7 @@ Assignment is focused on the use of yield and passing a block to a method.
 
 ## Screenshot
 
-![screenshot](appscreenshot.png)
+![screenshot](img/appscreenshot.png)
 
 
 ## Built With
@@ -20,7 +20,7 @@ Assignment is focused on the use of yield and passing a block to a method.
 
 ## Live Demo
 
-[Live Demo Link](https://repl.it/@livelink)
+[Live Demo Link](https://repl.it/@happiguru/MicroverseBubblesort#main.rb)
 
 
 ### Prerequisites
