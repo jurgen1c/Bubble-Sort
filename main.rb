@@ -28,23 +28,21 @@ p bubble_sort(my_array);
 
 
 def bubble_sort_by(array)
-    if array.all? String
-      k = array.length - 1
-      (0..k).each do |_i|
-        (0..k).each do |i|
-          next unless i != k
-          array[i], array[i + 1] = array[i + 1], array[i] if yield(array[i], array[i + 1]).positive?
-        end
+  unsorted = true
+  while unsorted
+   
+    (0..(array.length - 2)).each do |index|
+      if yield(array[index], array[index + 1]).negative?
+        unsorted = true
+        array[index], array[index + 1] = [array[index + 1], array[index]]
+         unsorted = false
       end
-      array
-    else
-      puts 'not a valid array'
     end
   end
-  
-  puts 'Result of bubble_sort():'
-  print bubble_sort([4, -3, 37.3, -78, 2.4, 0, 4])
-  puts "\nResult of bubble_sort_by():"
+  array
+end
+
+puts "\nResult of bubble_sort_by():"
   print(bubble_sort_by(['hi', 'hello', 'goodbye', 'hey!']) do |left, right|
     left.length - right.length
   end)
