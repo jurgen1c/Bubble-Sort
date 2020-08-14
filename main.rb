@@ -40,5 +40,5 @@ end
 
 puts "\nResult of bubble_sort_by():"
 print(bubble_sort_by(['hi', 'hello', 'hey!']) do |left, right|
-    left.length - right.length
-  end)
+  left.length - right.length
+end)
